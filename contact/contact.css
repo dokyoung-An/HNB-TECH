@@ -89,6 +89,7 @@
 .pc .main-slide .about-container .contact .contact-container .contact-box .address ul {
     font-weight: 700;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 .pc .main-slide .about-container .contact .contact-container .contact-box .address ul li{
     font-weight: 400;
@@ -198,6 +199,7 @@
 .mobile .mobile-slide .about-container .contact .contact-container .contact-box .address ul {
     font-weight: 700;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 .mobile .mobile-slide .about-container .contact .contact-container .contact-box .address ul li{
     font-weight: 400;
