@@ -1,0 +1,162 @@
+/* 공통사항 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+    overflow: hidden;
+}
+.mobile {
+    display: none;
+ }
+/* 공통사항 끝 */
+
+.main-slide {
+    grid-area: main-slide;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-slide .slider {
+    width: calc(100%*6);
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+.main-slide .slider input {
+    display:none;
+}
+.main-slide .slider .image-box {
+    width:90%;
+    height: 100%;
+    transition: 0.3s ease;
+    margin: 0;
+
+}
+.main-slide .image-box .title {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    word-break: keep-all;
+    font-size: 2.2rem;
+    margin:2% 1%;
+    line-height: 50px;
+    z-index: 99;
+}
+.main-slide .slider .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    animation: slide 30s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+
+
+/* 반응형 웹 */
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 150vh;
+        display: block;
+    }
+    .mobile .mobile-slide {
+        grid-area: main-slide;
+        width: 100%;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+    
+    }
+    .mobile .mobile-slide .slider {
+        width: 600%;
+        height: 100%;
+        display: flex;
+    }
+    .mobile .mobile-slide .slider .image-box {
+        width: 100%;
+        height: 100%;
+    }
+    .mobile .mobile-slide .slider .image-box h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+        width: 100%;
+        position: absolute;
+        color: #fff;
+        font-size: 120%;
+        text-align: center;
+        top:20px;
+        z-index: 99;
+    }
+    .mobile .mobile-slide .image-box img {
+        width: 100%;
+        height: 100%;
+        animation: slide 30s infinite;
+        display: block;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0%);
+        }20% {
+            transform: translateX(-100%);
+        }
+        40% {
+            transform: translateX(-200%);
+        }
+        60% {
+            transform: translateX(-300%);
+        }
+        80% {
+            transform: translateX(-400%);
+        }
+        100% {
+            transform: translateX(-500%);
+        }
+    }
+
+}
+ 
+@media screen and (max-width:420px) {
+    .mobile .mobile-slide .slider .image-box h2 {
+        font-size: 1rem;
+    }
+
+}

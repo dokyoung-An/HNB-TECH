@@ -1,0 +1,228 @@
+.mobile {
+    display: none;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+    min-height: 800px;
+    max-height: 800px;
+}
+
+.pc .main-slide {
+    grid-area: main-slide;
+    width: 100%;
+    height: 100%;
+}
+.pc .main-slide .about-container {
+    padding:5% 15% 5% 5%;
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+}
+
+/* 카테고리 부분 */
+.pc .main-slide .about-container .contact .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .contact .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .contact .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .contact .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .contact .main-title h2 {
+    font-size: 2rem;
+}
+/* 선 */
+.pc .main-slide .about-container .contact .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .contact .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 지도부분 */
+.pc .main-slide .about-container .contact .contact-container {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "map address";
+    gap: 50px;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box .map{
+    grid-area: map;
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box .address {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box .address h3 {
+    margin-bottom: 50px;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box .address ul {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.pc .main-slide .about-container .contact .contact-container .contact-box .address ul li{
+    font-weight: 400;
+    list-style: none;
+    margin-left: 3%;
+    line-height: 20px;
+}
+
+
+/* 반응형 웹 */
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 150vh;
+        display: block;
+      
+    }
+  
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: 100%;
+        max-height: 1100px;
+        min-height: 1100px;
+        overflow: hidden;
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 130%;
+       overflow: hidden;
+     
+      
+    }
+    
+    /* 카테고리 부분 */
+    .mobile .mobile-slide .about-container .contact .ss-title{
+        width: 100%;
+        height: 20px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .contact .ss-title span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .mobile .mobile-slide .about-container .contact .ss-title span:last-child {
+        color: red;
+    }
+    /* 타이틀 */
+    .mobile .mobile-slide .about-container .contact .main-title {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .contact .main-title h2 {
+        font-size: 2rem;
+    }
+    /* 선 */
+    .mobile .mobile-slide .about-container .contact .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+    }
+    /* 아래 타이틀 */
+    .mobile .mobile-slide .about-container .contact .s-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    /* 지도부분 */
+.mobile .mobile-slide .about-container .contact .contact-container {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "map" 
+    "address";
+    gap: 30px;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box .map{
+    grid-area: map;
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+    max-width: 960px;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box .address {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box .address h3 {
+    margin-bottom: 50px;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box .address ul {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.mobile .mobile-slide .about-container .contact .contact-container .contact-box .address ul li{
+    font-weight: 400;
+    list-style: none;
+    margin-left: 3%;
+}
+
+}
+
+@media  screen and (max-width:540px) {
+    .mobile .mobile-slide .about-container .contact .ss-title span {
+        font-size: 0.5rem;
+    }
+    .mobile .mobile-slide .about-container .contact .main-title h2 {
+        font-size: 1.7rem;
+    }
+    .mobile .mobile-slide .about-container .contact .s-title {
+        font-size: 1.3rem;
+    }
+    .mobile .mobile-slide .about-container .contact .catagory ul li {
+        padding: 5px;
+    }
+    .mobile .mobile-slide .about-container .contact .catagory ul li a{
+        font-size: 0.5rem;
+        min-width: 50px;
+    }
+
+}

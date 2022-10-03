@@ -1,0 +1,273 @@
+/* 공통사항 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 11.7% 68.3% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+}
+.mobile {
+   display: none;
+}
+/* 공통사항 끝 */
+
+.side-box {
+    grid-area: side-box;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right: 0;
+}
+.side-box .side-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3"
+    "box4";
+    border: 1px solid rgba(0,0,0,0.2);
+
+}
+.side-box .side-container .box1 {
+   grid-area: box1;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+}
+.side-box .side-container .box2 {
+    grid-area: box2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    overflow: hidden;
+   position: relative;
+ }
+ .side-box .side-container .box3 {
+    grid-area: box3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+ }
+ .side-box .side-container .box4 {
+    grid-area: box4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+ }
+
+ /* 글자부분 */
+ .side-box .side-container .box span {
+    display: block;
+ }
+ .side-box .side-container .box .title {
+    font-size: 1.2rem;
+    color: red;
+    margin: 8% 8% 0 8%;
+ }
+ .side-box .side-container .box .eng {
+    font-size: 1rem;
+    margin: 0 8%;
+ }
+ /* 이미지 부분 */
+ .side-box .side-container .box img {
+    position: absolute;
+    right: 0;
+ }
+ .side-box .side-container .box1 img {
+      width: 80%;
+      height: 70%;
+      display: block;
+      bottom:2%;
+ }
+ .side-box .side-container .box2 img {
+    width: 80%;
+    height: 110%;
+    display: block;
+    bottom:-25%;
+    transform: translateX(27%);
+    
+}
+.side-box .side-container .box3 img {
+    width: 40%;
+    height: 80%;
+    display: block;
+    bottom:4%;
+    
+}
+.side-box .side-container .box4 img {
+    width: 83%;
+    height: 105%;
+    display: block;
+    bottom:4%;
+    transform: translateX(23%);
+}
+/* 반응형 웹 */
+@media screen and (max-width:1280px) {
+   .pc {
+       display: none;
+   }
+   .mobile{
+      grid-template-rows: 10% 40% 40% 10%;
+      grid-template-areas: 
+      "mobile-nav"
+      "mobile-slide"
+      "mobile-side-box"
+      "mobile-footer";
+      width: 100%;
+      height: 150vh;
+      display: block;
+   }
+   .mobile .mobile-side-box {
+      grid-area: mobile-side-box;
+      width: 100%;
+      height: 50%;
+    
+   }
+   .mobile .mobile-side-box .mobile-side-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: 
+      "box1 box2"
+      "box3 box4";
+      width: 100%;
+      height: 100%;
+     
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 {
+      grid-area: box1;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 2em;
+      overflow: hidden;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box2 {
+      grid-area: box2;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 2em;
+      background-color: rgba(0,0,0,0.1);
+      overflow: hidden;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box3 {
+      grid-area: box3;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 2em;
+      background-color: rgba(0,0,0,0.1);
+      overflow: hidden;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box4 {
+      grid-area: box4;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 2em;
+      overflow: hidden;
+      
+   }
+   .mobile .mobile-side-box .mobile-side-container .box span {
+      display: block;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 .title,
+   .mobile .mobile-side-box .mobile-side-container .box2 .title,
+   .mobile .mobile-side-box .mobile-side-container .box3 .title,
+   .mobile .mobile-side-box .mobile-side-container .box4 .title{
+      color: red;
+      font-size: 140%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box2 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box3 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box4 .eng{
+      font-size: 100%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 img,
+   .mobile .mobile-side-box .mobile-side-container .box2 img,
+   .mobile .mobile-side-box .mobile-side-container .box3 img,
+   .mobile .mobile-side-box .mobile-side-container .box4 img{  
+      position: absolute;
+      width: 50%;
+      height: 100%; 
+      right: 0;
+      bottom:0;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box2 img {
+      height: 140%;
+      right: -10%;
+      bottom: -30%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box3 img {
+      width: 30%;
+      height: 60%;
+      right: 10%;
+      bottom: 0%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box4 img {
+      height: 100%;
+      right: -5%;
+     bottom: 0%;
+   }
+}
+
+@media screen and (max-width:420px) {
+   .mobile .mobile-side-box .mobile-side-container .box1 .title,
+   .mobile .mobile-side-box .mobile-side-container .box2 .title,
+   .mobile .mobile-side-box .mobile-side-container .box3 .title,
+   .mobile .mobile-side-box .mobile-side-container .box4 .title{
+      font-size: 100%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box2 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box3 .eng,
+   .mobile .mobile-side-box .mobile-side-container .box4 .eng{
+      font-size: 80%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box1 img,
+   .mobile .mobile-side-box .mobile-side-container .box2 img,
+   .mobile .mobile-side-box .mobile-side-container .box3 img,
+   .mobile .mobile-side-box .mobile-side-container .box4 img{  
+      position: absolute;
+      width: 100%;
+      height: 80%; 
+   }
+   .mobile .mobile-side-box .mobile-side-container .box2 img {
+      height: 100%;
+      right: -20%;
+      bottom: -20%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box3 img {
+      width: 50%;
+      height: 60%;
+      right: 10%;
+      bottom: 0%;
+   }
+   .mobile .mobile-side-box .mobile-side-container .box4 img {
+      height: 80%;
+      right: -15%;
+     bottom: 0%;
+   }
+}

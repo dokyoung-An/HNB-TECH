@@ -1,0 +1,1457 @@
+.mobile {
+    display: none;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+    min-height: 800px;
+    max-height: 800px;
+}
+
+.pc .main-slide {
+    grid-area: main-slide;
+    width: 100%;
+    height: 100%;
+    min-height: 1700px;
+    max-height: 1700px;
+}
+.pc .main-slide .about-container {
+    padding:5% 15% 5% 5%;
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+   position: relative;
+}
+/* 옵션 보이기  */
+.pc .main-slide .about-container .air {
+    display: block;
+}
+.pc .main-slide .about-container .air.active {
+    display: none;
+}
+.pc .main-slide .about-container .water {
+    display: none;
+}
+.pc .main-slide .about-container .water.active {
+    display: block;
+}
+.pc .main-slide .about-container .vr {
+    display: none;
+}
+.pc .main-slide .about-container .vr.active {
+    display: block;
+}
+.pc .main-slide .about-container .home {
+    display: none;
+}
+.pc .main-slide .about-container .home.active {
+    display: block;
+}
+/* 카테고리 부분 */
+/* 항공드론 */
+.pc .main-slide .about-container .air .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .air .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .air .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .air .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .air .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.pc .main-slide .about-container .air .option {
+   width: 100%;
+}
+.pc .main-slide .about-container .air .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .air .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.pc .main-slide .about-container .air .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.pc .main-slide .about-container .air .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.pc .main-slide .about-container .air .option ul .opt1 span {
+    display: block;
+}
+.pc .main-slide .about-container .air .option ul .opt1:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.pc .main-slide .about-container .air .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.pc .main-slide .about-container .air .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .air .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.pc .main-slide .about-container .air .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .air .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.pc .main-slide .about-container .air .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .air .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .air .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .air .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .air .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .air .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pc .main-slide .about-container .air .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.pc .main-slide .about-container .air .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+.pc .main-slide .about-container .air .explain .drone-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.pc .main-slide .about-container .air .explain .drone-image img {
+    margin: 0 3%;
+    width: 50%;
+    height: 80%;
+}
+
+/* 항공드론 끝*/
+/* 수중드론 */
+.pc .main-slide .about-container .water .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .water .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .water .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .water .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .water .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.pc .main-slide .about-container .water .option {
+   width: 100%;
+}
+.pc .main-slide .about-container .water .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .water .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.pc .main-slide .about-container .water .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.pc .main-slide .about-container .water .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.pc .main-slide .about-container .water .option ul .opt2 span {
+    display: block;
+}
+.pc .main-slide .about-container .water .option ul .opt2:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.pc .main-slide .about-container .water .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.pc .main-slide .about-container .water .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .water .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.pc .main-slide .about-container .water .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .water .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.pc .main-slide .about-container .water .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .water .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .water .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .water .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .water .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .water .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pc .main-slide .about-container .water .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.pc .main-slide .about-container .water .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+/* 수중드론 끝*/
+/* vr 촬영 */
+.pc .main-slide .about-container .vr .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .vr .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .vr .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .vr .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .vr .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.pc .main-slide .about-container .vr .option {
+   width: 100%;
+}
+.pc .main-slide .about-container .vr .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .vr .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.pc .main-slide .about-container .vr .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.pc .main-slide .about-container .vr .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.pc .main-slide .about-container .vr .option ul .opt3 span {
+    display: block;
+}
+.pc .main-slide .about-container .vr .option ul .opt3:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.pc .main-slide .about-container .vr .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.pc .main-slide .about-container .vr .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .vr .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.pc .main-slide .about-container .vr .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .vr .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.pc .main-slide .about-container .vr .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .vr .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .vr .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .vr .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .vr .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .vr .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pc .main-slide .about-container .vr .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.pc .main-slide .about-container .vr .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+/* vr 촬영 끝*/
+/* 사전점검 촬영 */
+.pc .main-slide .about-container .home .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .home .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .home .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .home .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .home .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.pc .main-slide .about-container .home .option {
+   width: 100%;
+}
+.pc .main-slide .about-container .home .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .home .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.pc .main-slide .about-container .home .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.pc .main-slide .about-container .home .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.pc .main-slide .about-container .home .option ul .opt4 span {
+    display: block;
+}
+.pc .main-slide .about-container .home .option ul .opt4:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.pc .main-slide .about-container .home .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.pc .main-slide .about-container .home .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .home .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.pc .main-slide .about-container .home .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .home .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.pc .main-slide .about-container .home .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .home .explain {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .home .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .home .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .home .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.pc .main-slide .about-container .home .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pc .main-slide .about-container .home .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.pc .main-slide .about-container .home .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+.pc .main-slide .about-container .home .explain .detail .brand {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.pc .main-slide .about-container .home .explain .detail .brand img {
+    width: 40%;
+    height: 80%;
+}
+.pc .main-slide .about-container .home .explain .detail .brand a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transform: translateY(70%);
+    font-size: 1.5rem;
+}
+.pc .main-slide .about-container .home .explain .detail .brand a:before {
+    content:'';
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: red;
+    bottom: 130px;
+    animation: slide 3s infinite;
+}
+@keyframes slide {
+    from {
+        width: 0;
+    }to {
+        width: 100%;
+    }
+}
+
+/* 사전점검 끝*/
+
+
+
+/* 반응형 시작 */
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 150vh;
+        display: block;
+    }
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: 100%;
+       
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 140%;
+        overflow: hidden; 
+    }
+
+    /* 옵션 보이기  */
+.mobile .mobile-slide .about-container .air {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mobile .mobile-slide .about-container .air.active {
+    display: none;
+}
+.mobile .mobile-slide .about-container .water {
+    display: none;
+}
+.mobile .mobile-slide .about-container .water.active {
+    display: block;
+}
+.mobile .mobile-slide .about-container .vr {
+    display: none;
+}
+.mobile .mobile-slide .about-container .vr.active {
+    display: block;
+}
+.mobile .mobile-slide .about-container .home {
+    display: none;
+}
+.mobile .mobile-slide .about-container .home.active {
+    display: block;
+}
+/* 카테고리 부분 */
+/* 항공드론 */
+.mobile .mobile-slide .about-container .air .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .air .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.mobile .mobile-slide .about-container .air .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.mobile .mobile-slide .about-container .air .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .air .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.mobile .mobile-slide .about-container .air .option {
+   width: 100%;
+}
+.mobile .mobile-slide .about-container .air .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .air .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.mobile .mobile-slide .about-container .air .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.mobile .mobile-slide .about-container .air .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.mobile .mobile-slide .about-container .air .option ul .opt1 span {
+    display: block;
+}
+.mobile .mobile-slide .about-container .air .option ul .opt1:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.mobile .mobile-slide .about-container .air .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.mobile .mobile-slide .about-container .air .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.mobile .mobile-slide .about-container .air .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.mobile .mobile-slide .about-container .air .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .air .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.mobile .mobile-slide .about-container .air .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .air .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .air .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .air .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .air .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .air .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile .mobile-slide .about-container .air .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.mobile .mobile-slide .about-container .air .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+.mobile .mobile-slide .about-container .air .explain .drone-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.mobile .mobile-slide .about-container .air .explain .drone-image img {
+    margin: 0 3%;
+    width: 50%;
+    height: 80%;
+}
+
+/* 항공드론 끝*/
+/* 수중드론 */
+.mobile .mobile-slide .about-container .water .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .water .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.mobile .mobile-slide .about-container .water .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.mobile .mobile-slide .about-container .water .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .water .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.mobile .mobile-slide .about-container .water .option {
+   width: 100%;
+}
+.mobile .mobile-slide .about-container .water .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .water .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.mobile .mobile-slide .about-container .water .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.mobile .mobile-slide .about-container .water .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.mobile .mobile-slide .about-container .water .option ul .opt2 span {
+    display: block;
+}
+.mobile .mobile-slide .about-container .water .option ul .opt2:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.mobile .mobile-slide .about-container .water .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.mobile .mobile-slide .about-container .water .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.mobile .mobile-slide .about-container .water .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.mobile .mobile-slide .about-container .water .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .water .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.mobile .mobile-slide .about-container .water .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .water .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .water .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .water .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .water .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .water .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile .mobile-slide .about-container .water .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.mobile .mobile-slide .about-container .water .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+/* 수중드론 끝*/
+/* vr 촬영 */
+.mobile .mobile-slide .about-container .vr .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .vr .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.mobile .mobile-slide .about-container .vr .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.mobile .mobile-slide .about-container .vr .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .vr .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.mobile .mobile-slide .about-container .vr .option {
+   width: 100%;
+}
+.mobile .mobile-slide .about-container .vr .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .vr .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.mobile .mobile-slide .about-container .vr .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.mobile .mobile-slide .about-container .vr .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.mobile .mobile-slide .about-container .vr .option ul .opt3 span {
+    display: block;
+}
+.mobile .mobile-slide .about-container .vr .option ul .opt3:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.mobile .mobile-slide .about-container .vr .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.mobile .mobile-slide .about-container .vr .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.mobile .mobile-slide .about-container .vr .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.mobile .mobile-slide .about-container .vr .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .vr .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.mobile .mobile-slide .about-container .vr .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .vr .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .vr .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .vr .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .vr .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .vr .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile .mobile-slide .about-container .vr .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.mobile .mobile-slide .about-container .vr .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+/* vr 촬영 끝*/
+/* 사전점검 촬영 */
+.mobile .mobile-slide .about-container .home .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .home .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.mobile .mobile-slide .about-container .home .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.mobile .mobile-slide .about-container .home .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .home .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.mobile .mobile-slide .about-container .home .option {
+   width: 100%;
+}
+.mobile .mobile-slide .about-container .home .option ul{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    transform: translateX(150%);
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .home .option ul li{
+   width: 100%;
+   height: auto;
+   list-style: none;
+   font-size: 0.8rem;
+   position: relative;
+   margin-right: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+.mobile .mobile-slide .about-container .home .option ul li:hover:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+}
+.mobile .mobile-slide .about-container .home .option ul li span {
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    color: red;
+    display: none;
+}
+/* 옵션 선택 고정 부분 */
+.mobile .mobile-slide .about-container .home .option ul .opt4 span {
+    display: block;
+}
+.mobile .mobile-slide .about-container .home .option ul .opt4:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+.mobile .mobile-slide .about-container .home .option ul li:hover span {
+    display: block;
+}
+/* 선 */
+.mobile .mobile-slide .about-container .home .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.mobile .mobile-slide .about-container .home .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* 비디오 부분 */
+.mobile .mobile-slide .about-container .home .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.mobile .mobile-slide .about-container .home .video video {
+    width: 100%;
+    height: 100%;
+}
+
+/* 동영상 아래 설명부분 */
+.mobile .mobile-slide .about-container .home .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .home .explain {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .home .explain .title {
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .home .explain .detail {
+    width: 100%;
+    height: auto;
+}
+.mobile .mobile-slide .about-container .home .explain .detail h5 {
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+.mobile .mobile-slide .about-container .home .explain .detail ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile .mobile-slide .about-container .home .explain .detail ul:last-child {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+.mobile .mobile-slide .about-container .home .explain .detail ul li {
+    list-style:none;
+    font-size: 1rem;
+    width: 100%;
+    height: 30px; 
+    padding-left: 3%;
+}
+.mobile .mobile-slide .about-container .home .explain .detail .brand {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.mobile .mobile-slide .about-container .home .explain .detail .brand img {
+    width: 40%;
+    height: 80%;
+}
+.mobile .mobile-slide .about-container .home .explain .detail .brand a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transform: translateY(70%);
+    font-size: 1.5rem;
+}
+.mobile .mobile-slide .about-container .home .explain .detail .brand a:before {
+    content:'';
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: red;
+    bottom: 130px;
+    animation: slide 3s infinite;
+}
+@keyframes slide {
+    from {
+        width: 0;
+    }to {
+        width: 100%;
+    }
+}
+}
+
+@media screen and (max-width:540px) {
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 140%;
+        overflow: hidden; 
+        max-height: 1350px;
+    }
+    .mobile .mobile-slide .about-container .air .ss-title span,
+    .mobile .mobile-slide .about-container .water .ss-title span,
+    .mobile .mobile-slide .about-container .vr .ss-title span,
+    .mobile .mobile-slide .about-container .home .ss-title span {
+        font-size: 0.5rem;
+    }
+    /* 타이틀 */
+    .mobile .mobile-slide .about-container .air .main-title,
+    .mobile .mobile-slide .about-container .water .main-title,
+    .mobile .mobile-slide .about-container .vr .main-title,
+    .mobile .mobile-slide .about-container .home .main-title {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 35px;
+    }
+    .mobile .mobile-slide .about-container .air .main-title h2,
+    .mobile .mobile-slide .about-container .water .main-title h2,
+    .mobile .mobile-slide .about-container .vr .main-title h2,
+    .mobile .mobile-slide .about-container .home .main-title h2  {
+        font-size: 1.7rem;
+    }
+    .mobile .mobile-slide .about-container .air .s-title,
+    .mobile .mobile-slide .about-container .water .s-title,
+    .mobile .mobile-slide .about-container .vr .s-title,
+    .mobile .mobile-slide .about-container .home .s-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .air .option ul,
+    .mobile .mobile-slide .about-container .water .option ul,
+    .mobile .mobile-slide .about-container .vr .option ul,
+    .mobile .mobile-slide .about-container .home .option ul{
+        width: 100%;
+        transform: translateX(0%);
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .air .option ul li,
+    .mobile .mobile-slide .about-container .water .option ul li,
+    .mobile .mobile-slide .about-container .vr .option ul li,
+    .mobile .mobile-slide .about-container .home .option ul li{
+       font-size: 0.5rem;
+       margin-right: 20px;
+      
+    }
+    /* 동영상 아래 설명부분 */
+    .mobile .mobile-slide .about-container .air .explain .title,
+    .mobile .mobile-slide .about-container .water .explain .title,
+    .mobile .mobile-slide .about-container .vr .explain .title,
+    .mobile .mobile-slide .about-container .home .explain .title {
+        font-size: 0.8rem;
+    }
+    .mobile .mobile-slide .about-container .air .explain .detail h5,
+    .mobile .mobile-slide .about-container .water .explain .detail h5,
+    .mobile .mobile-slide .about-container .vr .explain .detail h5,
+    .mobile .mobile-slide .about-container .home .explain .detail h5 {
+        font-size: 0.8rem;
+    }
+    .mobile .mobile-slide .about-container .air .explain .detail ul,
+    .mobile .mobile-slide .about-container .water .explain .detail ul,
+    .mobile .mobile-slide .about-container .vr .explain .detail ul,
+    .mobile .mobile-slide .about-container .home .explain .detail ul {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    .mobile .mobile-slide .about-container .air .explain .detail ul:last-child,
+    .mobile .mobile-slide .about-container .water .explain .detail ul:last-child,
+    .mobile .mobile-slide .about-container .vr .explain .detail ul:last-child,
+    .mobile .mobile-slide .about-container .home .explain .detail ul:last-child {
+        font-size: 0.8rem;
+    }
+    .mobile .mobile-slide .about-container .air .explain .detail ul li,
+    .mobile .mobile-slide .about-container .water .explain .detail ul li,
+    .mobile .mobile-slide .about-container .vr .explain .detail ul li,
+    .mobile .mobile-slide .about-container .home .explain .detail ul li {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .mobile .mobile-slide .about-container .home .explain .detail .brand a {
+        transform: translateY(70%);
+        font-size: 0.8rem;
+    }
+    .mobile .mobile-slide .about-container .home .explain .detail .brand a:before {
+        bottom: 50px;
+    }
+}

@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+}
+.mobile {
+    display: none;
+ }
+
+.nav {
+    grid-area: nav;
+    width: 11.7%;
+    height: 100vh;
+    background-color: red;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    bottom:0;
+    
+}
+.nav .nav-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.nav .nav-container .logo {
+    position: relative;
+    top:0;
+    width: 100%;
+    padding: 10%;  
+}
+.nav .nav-container .logo a {
+    text-decoration: none;
+}
+.nav .nav-container .logo span {
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-family: Roboto;
+    letter-spacing: 1px;
+   
+}
+.nav .nav-container .logo .big {
+    font-size: 2.2rem;
+    font-weight:600;
+}
+.nav .nav-container .logo .small {
+    font-size: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin-left: 10px;
+}
+/* 언어 */
+.nav .nav-container .language {
+    position: relative;
+    top:10px;
+    width: 100%;
+    height: 100px;
+    padding: 0 10%;
+}
+.nav .nav-container .language span {
+    color: #fff;
+    display: flex;
+}
+.nav .nav-container .language .lang {
+    background-color: rgba(0,0,0,0.1);
+    padding: 1px 5px;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 22px;   
+}
+.nav .nav-container .language .lang a{
+   text-decoration: none;
+   pointer-events: none;
+   color: #fff;
+   margin-left: 10%;
+   margin-right: 20%;
+}
+.nav .nav-container .language .lang .material-symbols-outlined {
+     transform: translateY(-4px);
+    
+
+}
+.nav .nav-container .language .drop-down {
+    padding: 2px 0px;
+    display:none;
+    transition: 0.3s ease;
+}
+.nav .nav-container .language:hover .drop-down {
+    display: block;
+    line-height: 30px;
+    background-color: rgba(0,0,0,0.1);
+}
+.nav .nav-container .language .drop-down a {
+     text-decoration: none;
+}
+.nav .nav-container .language .drop-down span {
+    display: block;
+    color: #fff;
+    padding:0 20px;
+    font-size: 0.7rem;
+}
+
+.nav .nav-container .language .drop-down .kor:hover,
+.nav .nav-container .language .drop-down .eng:hover{
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+}
+/* 언어 끝 */
+/* 카테고리 시작 */
+.nav .nav-container .menu {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.nav .nav-container .menu  {
+    list-style: none;
+}
+.nav .nav-container .menu li:not(:first-child) {
+    list-style: none;
+    margin: 20px 0;
+}
+.nav .nav-container .menu .item {
+    width: 100%;
+    height: 12%;  
+}
+.nav .nav-container .menu .item:hover {
+    background-color: rgba(0,0,0,0.2);   
+}
+.nav .nav-container .menu li a{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 4px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 1em 10%;
+    display: flex;
+    align-items: center;
+}
+/* 카테고리 끝 */
+.nav .nav-container .line {
+    width: 80%;
+    height: 1px;
+    margin: 0 10%;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+}
+/* 푸터 시작 */
+.nav .nav-container .footer {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    padding: 0 10%;
+}
+.nav .nav-container .footer span {
+    color: #fff;
+    font-size: 0.8rem;
+}
+/* 주소부분 */
+.nav .nav-container .footer .add {
+    margin-top: 10px;
+    width: 100%;
+    height: 130px;
+    line-height: 15px;
+}
+.nav .nav-container .footer .add span{
+    display: block;
+    margin-bottom: 10px;
+}
+/* 전화번호 */
+.nav .nav-container .footer .num,
+.nav .nav-container .footer .fax ,
+.nav .nav-container .footer .email  {
+   width: 100%;
+   height: 20px;
+}
+.nav .nav-container .line {
+    width: 80%;
+    height: 1px;
+    margin: 0 10%;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+}
+.nav .nav-container .copy {
+    position: absolute;
+    bottom:30px;
+    font-weight: 700;
+    width: 90%;
+    height: 30px;
+    padding: 0 10%;
+    font-size: 0.8rem;
+    color: #fff;
+}
+    
+/* 반응형 웹 */
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 150vh;
+        display: block;
+    }
+    .mobile .mobile-nav {
+       grid-area: mobile-nav;
+       width: 100%;
+       height: 8%;
+       background-color: red;
+       padding:2% 8% 3% 50%;
+
+    }
+    .mobile .mobile-nav .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .mobile .mobile-nav .title .logoes span{
+        display: block;
+    }
+    .mobile .mobile-nav .title a{
+        text-decoration: none;
+    }
+    .mobile .mobile-nav .title .logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        transform: translateX(-50%);
+        letter-spacing: 2px;
+    }
+    .mobile .mobile-nav .title .logo-small {
+        transform: translateX(-50%);
+        font-size: 1rem;
+        letter-spacing: 10px;
+        color: #fff;
+        padding:0 10%;
+        line-height: 10px;
+       
+    }
+    .mobile .mobile-nav .title .material-symbols-outlined {
+        color: #fff;
+         font-size: 2rem;
+         cursor: pointer;
+         z-index: 99;
+    }
+    .mobile .side-menu {
+        width: 80%;
+        height: 100%;
+        background-color: #dddde5;
+        padding: 4%;
+        box-sizing: border-box;
+        position: fixed;
+        display: block;
+        top:0;
+        bottom:0;
+        transform: translateX(-100%);
+        transition: 0.3s ease;
+        z-index: 99999;
+    }
+    .mobile .side-menu.active {
+        transform: translateX(0%);
+    }
+
+    .mobile .side-menu .language {
+        width: 100%;
+        height: 7%;
+        margin: 0 0 2em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+     
+    }
+  
+    .mobile .side-menu .language li{
+        box-sizing: border-box;
+        width: 40%;
+        height: 100%;
+        background-color: #fff;
+        text-align: center;
+        border-right: 1px solid  #eaeaee;
+        list-style: none;
+        font-family: 'Nanum Gothic', sans-serif;
+        float: left;
+    }
+    .mobile .side-menu .language li a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        font-size: 120%;
+        padding: 0.5em 0;
+        text-align: center;
+        line-height: 2;
+        width: 100%;
+        cursor: pointer;
+    }
+    .mobile .side-menu .language .material-symbols-outlined {
+        width: 33.3%;
+        height: 100%;
+        background-color: #fff;
+        padding: 0.5em 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .mobile .side-menu .menu {
+        width: 100%;
+        height: 50%;
+    }
+    .mobile .side-menu .menu li {
+        width: 100%;
+        height: 17%;
+        list-style: none;
+        background-color: #fff;
+        box-sizing: border-box;
+        border-bottom: 1px solid  #eaeaee;
+        padding: 0em 2em;
+        display: flex;
+        align-items: center;
+    }
+    .mobile .side-menu .menu .item a {
+        text-decoration: none;
+        font-size: 120%;
+        color: #000;
+        cursor: pointer;
+    }
+
+    
+    /* 모바일 푸터 부분 */
+    .mobile-footer {
+        grid-area: mobile-footer;
+        width: 100%;
+        height: 10%;
+        background-color: red;
+        padding:2em;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+    }
+    .mobile-footer .add {
+       width: 100%;
+    }
+    .mobile-footer .add span {
+       display: inline-block;
+       margin-right: 40px;
+       line-height: 30px;
+       color:#fff;
+       font-size: 100%;
+    }
+
+}
+@media screen and (max-width:540px) {
+    .mobile .side-menu .language li a {
+        font-size: 80%;
+        padding: 1em 0;
+    }
+    .mobile .side-menu .menu .item a {
+        font-size:100%;
+    }
+    .mobile-footer .add span {
+        line-height: 15px;
+        color:#fff;
+        font-size: 10%;
+        margin-right: 1px;
+     }
+     .mobile-footer .add span:not(:first-child) {
+        margin-right: 15px;
+     }
+
+}

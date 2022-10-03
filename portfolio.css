@@ -1,0 +1,253 @@
+.mobile {
+    display: none;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+    min-height: 800px;
+    max-height: 800px;
+}
+.pc .main-slide {
+    grid-area: main-slide;
+    width: 100%;
+    height: 100%;
+}
+.pc .main-slide .about-container {
+    padding:5% 15% 5% 5%;
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+}
+/* 카테고리 부분 */
+.pc .main-slide .about-container .portfolio .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .portfolio .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .portfolio .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .portfolio .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .portfolio .main-title h2 {
+    font-size: 2rem;
+}
+/* 선 */
+.pc .main-slide .about-container .portfolio .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .portfolio .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 갤러리 */
+.pc .main-slide .about-container .portfolio .port-box {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "port1 port2 port3 port4"
+    "port5 port6 port7 port8";
+    gap:5px;
+    width: 100%;
+    height: 350px;
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container a {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container a img {
+    width: 100%;
+    height: 100%;
+}
+.pc .main-slide .about-container .portfolio .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.pc .main-slide .about-container .portfolio .button .btn {
+    margin-right: 5px;
+    margin-top: 80px;
+    border: 1px solid #000;
+    padding:5px 7px;
+}
+
+
+
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 100vh;
+        display: block;
+        max-height: 2000px;
+    }
+  
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: 350%;
+        overflow: hidden;
+        min-height: 2250px;
+        max-height: 2250px;
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 100%;
+       overflow: hidden;
+       min-height: 2250px;
+       max-height: 2250px;
+    }
+    .mobile .mobile-slide .about-container .portfolio{
+        width: 100%;
+        height: auto;
+    }
+     /* 카테고리 부분 */
+     .mobile .mobile-slide .about-container .portfolio .ss-title{
+        width: 100%;
+        height: 20px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .ss-title span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .mobile .mobile-slide .about-container .portfolio .ss-title span:last-child {
+        color: red;
+    }
+    /* 타이틀 */
+    .mobile .mobile-slide .about-container .portfolio .main-title {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .main-title h2 {
+        font-size: 2rem;
+    }
+    /* 선 */
+    .mobile .mobile-slide .about-container .portfolio .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+    }
+    /* 아래 타이틀 */
+    .mobile .mobile-slide .about-container .portfolio .s-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    /* 갤러리 부분 */
+ .mobile .mobile-slide .about-container .portfolio .port-box {
+        width: 100%;
+        height: auto;
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container {
+        display: grid;
+        grid-template-areas: 
+        "port1 port2"
+        "port3 port4";
+        width: 100%;
+        height: 100%;
+        gap:5px;
+        min-height: 1600px;
+        max-height: 1850px;
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container a {
+        width: 100%;
+        height: auto;
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container img {
+        width: 100%;
+        height: 100%;
+    }
+ .mobile .mobile-slide .about-container .portfolio .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+ .mobile .mobile-slide .about-container .portfolio .button .btn {
+        margin-right: 5px;
+        margin-top: 80px;
+        border: 1px solid #000;
+        padding:5px 7px;
+    }   
+}
+
+@media  screen and (max-width:540px) {
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: 120%;
+        min-height: 1200px;
+        max-height:1200px ;
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 100%;
+       overflow: hidden;
+       max-height: 1200px;
+       min-height: 1200px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .port-box .port-container {
+        display: grid;
+        grid-template-areas: 
+        "port1 port2"
+        "port3 port4";
+        width: 100%;
+        height: 50%;
+        gap:5px;
+        min-height: 800px;
+    }
+    
+    /* 맨 위 개요 부분 */
+    .mobile .mobile-slide .about-container .portfolio .ss-title span {
+        font-size: 0.5rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .main-title h2 {
+        font-size: 1.7rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .s-title {
+        font-size: 1.3rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .catagory ul li {
+        padding: 5px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .catagory ul li a{
+        font-size: 0.5rem;
+        min-width: 50px;
+    }
+}
