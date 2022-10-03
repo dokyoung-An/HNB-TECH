@@ -29,16 +29,16 @@
 }
 /* 옵션 보이기  */
 .pc .main-slide .about-container .air {
-    display: block;
+    display: none;
 }
 .pc .main-slide .about-container .air.active {
-    display: none;
+    display: block;
 }
 .pc .main-slide .about-container .water {
-    display: none;
+    display: block;
 }
 .pc .main-slide .about-container .water.active {
-    display: block;
+    display: none;
 }
 .pc .main-slide .about-container .vr {
     display: none;
@@ -715,15 +715,15 @@
 
     /* 옵션 보이기  */
 .mobile .mobile-slide .about-container .air {
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
 }
 .mobile .mobile-slide .about-container .air.active {
-    display: none;
+    display: block;
 }
 .mobile .mobile-slide .about-container .water {
-    display: none;
+    display: block;
 }
 .mobile .mobile-slide .about-container .water.active {
     display: block;
@@ -872,7 +872,6 @@
 .mobile .mobile-slide .about-container .air .explain .detail ul {
     width: 100%;
     margin-bottom: 10px;
-    line-height: 30px;
 }
 
 .mobile .mobile-slide .about-container .air .explain .detail ul:last-child {

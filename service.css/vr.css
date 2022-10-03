@@ -29,10 +29,10 @@
 }
 /* 옵션 보이기  */
 .pc .main-slide .about-container .air {
-    display: block;
+    display: none;
 }
 .pc .main-slide .about-container .air.active {
-    display: none;
+    display: block;
 }
 .pc .main-slide .about-container .water {
     display: none;
@@ -41,10 +41,10 @@
     display: block;
 }
 .pc .main-slide .about-container .vr {
-    display: none;
+    display: block;
 }
 .pc .main-slide .about-container .vr.active {
-    display: block;
+    display: none;
 }
 .pc .main-slide .about-container .home {
     display: none;
@@ -715,12 +715,12 @@
 
     /* 옵션 보이기  */
 .mobile .mobile-slide .about-container .air {
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
 }
 .mobile .mobile-slide .about-container .air.active {
-    display: none;
+    display: block;
 }
 .mobile .mobile-slide .about-container .water {
     display: none;
@@ -729,10 +729,10 @@
     display: block;
 }
 .mobile .mobile-slide .about-container .vr {
-    display: none;
+    display: block;
 }
 .mobile .mobile-slide .about-container .vr.active {
-    display: block;
+    display: none;
 }
 .mobile .mobile-slide .about-container .home {
     display: none;
@@ -1321,7 +1321,6 @@
 .mobile .mobile-slide .about-container .home .explain .detail ul {
     width: 100%;
     margin-bottom: 10px;
-    line-height: 30px;
 }
 
 .mobile .mobile-slide .about-container .home .explain .detail ul:last-child {

@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 .pc {
     display:grid;
     grid-template-columns: 10% 70% 20%;
@@ -81,6 +82,8 @@
     font-size: 0.8rem;
     width: 100%;
     height: 22px;   
+    display: flex;
+    align-items: center;
 }
 .nav .nav-container .language .lang a{
    text-decoration: none;
@@ -90,9 +93,8 @@
    margin-right: 20%;
 }
 .nav .nav-container .language .lang .material-symbols-outlined {
-     transform: translateY(-4px);
-    
-
+    display: flex;
+    align-items: center;
 }
 .nav .nav-container .language .drop-down {
     padding: 2px 0px;
