@@ -96,32 +96,32 @@
 <!-- 메인 시작-->   
 <div class="main-slide">
     <div class="slider">
-    <div class="image-box first">
+    <div class="image-box first0">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box first1">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/수중드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box first2">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/메타포트.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box first3">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box first4">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/수중드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box first5">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/메타포트.jpg">
@@ -138,8 +138,8 @@
             <div class="title">
                 <a href="javjascript:void(0)">
                 <div class="logoes">
-                <span class="logo">HNB</span>
-                <span class="logo-small">TECH</span>
+                <span class="logo">HNB TECH</span>
+                <span class="logo-small"></span>
             </div></a>
                 <span class="material-symbols-outlined" id="open">menu</span>
             </div>
@@ -166,32 +166,32 @@
 <!-- 메인 시작-->   
 <div class="mobile-slide">
     <div class="slider">
-    <div class="image-box first">
+    <div class="image-box img0">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box img1">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/수중드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box img2">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/메타포트.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box img3">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box img4">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/수중드론.jpg">
     </div>
-    <div class="image-box">
+    <div class="image-box img5">
         <h2 class="title">HNB TECH 고객님을 위하여 최선을 다합니다.<br>
             기술과 혁신을 선도하는 기업 HNB TECH.</h2>
         <img src="./image/메타포트.jpg">
@@ -245,11 +245,51 @@
    
 </div>
     </div>
+<script>
+ let counter = 1;
+ let counter11 = 0;
+ 
+function moving() {
+    const first = document.querySelector('.first'+ counter)
+    const first11 = document.querySelector('.first'+ counter11)
+     
+    if (counter< 6) {
+      first.classList.toggle('active')
+      first11.classList.toggle('active')
+      counter++
+      counter11++
+    }else {
+        counter=1;
+        counter11=0;
+    }
+}
+
+setInterval(moving,4000);
+
+let counter1 = 1;
+let counter0 = 0
+
+function moving2  () {
+    const first1 = document.querySelector('.img' + counter1)
+    const first0 = document.querySelector('.img' + counter0)
+
+    if (counter1 <6) {
+        first1.classList.toggle('active')
+        first0.classList.toggle('active')
+
+        counter1 ++;
+        counter0 ++;
+        console.log(first1)
+        console.log(first0)
+    } else {
+      counter1 = 1
+      counter0 = 0
+    }
+}
+setInterval(moving2,1000);
 
 
-
-
-
+</script>
 <script src="./js/sidemenu.js"></script>
 </body>
 </html>

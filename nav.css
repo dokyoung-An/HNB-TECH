@@ -221,16 +221,15 @@
         "mobile-side-box"
         "mobile-footer";
         width: 100%;
-        height: 150vh;
+        height: 120vh;
         display: block;
     }
     .mobile .mobile-nav {
        grid-area: mobile-nav;
        width: 100%;
-       height: 8%;
+       height: 6%;
        background-color: red;
-       padding:2% 8% 3% 50%;
-
+       padding:2% 8% 2% 50%;
     }
     .mobile .mobile-nav .title {
         display: flex;
@@ -241,9 +240,16 @@
     }
     .mobile .mobile-nav .title .logoes span{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .mobile .mobile-nav .title a{
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      
     }
     .mobile .mobile-nav .title .logo {
         font-size: 2.5rem;
@@ -251,19 +257,24 @@
         color: #fff;
         transform: translateX(-50%);
         letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        line-height: 20px;
     }
     .mobile .mobile-nav .title .logo-small {
         transform: translateX(-50%);
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: 10px;
         color: #fff;
         padding:0 10%;
         line-height: 10px;
+        display: flex;
+        align-items: center;
        
     }
     .mobile .mobile-nav .title .material-symbols-outlined {
         color: #fff;
-         font-size: 2rem;
+         font-size: 2.5rem;
          cursor: pointer;
          z-index: 99;
     }
@@ -375,6 +386,54 @@
 
 }
 @media screen and (max-width:540px) {
+    .mobile .mobile-nav {
+        grid-area: mobile-nav;
+        width: 100%;
+        height: 7.5%;
+        background-color: red;
+        padding:2% 8% 2% 50%;
+ 
+     }
+     .mobile .mobile-nav .title {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+     }
+     .mobile .mobile-nav .title .logoes span{
+         display: block;
+     }
+     .mobile .mobile-nav .title a{
+         text-decoration: none;
+       
+         height: 100%;
+     }
+     .mobile .mobile-nav .title .logo {
+         font-size: 24px;
+         font-weight: 600;
+         color: #fff;
+         transform: translateX(-50%);
+         letter-spacing: 2px;
+         line-height: 20px;
+     
+     }
+     .mobile .mobile-nav .title .logo-small {
+         transform: translateX(-45%);
+         font-size:3px;
+         letter-spacing: 7px;
+         color: #fff;
+         padding:0 0%;
+         line-height: 10px;
+         display: flex;
+         align-items: center;
+        
+     }
+     .mobile .mobile-nav .title .material-symbols-outlined {
+         font-size: 2rem;
+         margin-bottom: 10px;
+
+    }
     .mobile .side-menu .language li a {
         font-size: 80%;
         padding: 1em 0;
@@ -382,14 +441,29 @@
     .mobile .side-menu .menu .item a {
         font-size:100%;
     }
-    .mobile-footer .add span {
-        line-height: 15px;
-        color:#fff;
+   
+     /* 모바일 푸터 */
+     .mobile-footer {
+        grid-area: mobile-footer;
+        width: 100%;
+        height: 9%;
+    }
+
+     .mobile-footer {
+        padding:2% 3%;
+        display: flex;
+        align-items: center;
+      
+     }
+     .mobile-footer .add span {
+        line-height: 10px;
         font-size: 10%;
         margin-right: 1px;
+       
      }
      .mobile-footer .add span:not(:first-child) {
         margin-right: 15px;
      }
+ 
 
 }

@@ -13,9 +13,12 @@
     grid-template-areas: 
     "nav main-slide side-box";
     width: 100%;
-    height: 160vh;
+    height: 100vh;
     min-width: 500px;
     overflow: hidden;
+    min-height: 100vh;
+    max-height: 100vh;
+
 }
 .mobile {
     display: none;
@@ -27,22 +30,29 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    min-height: 100vh;
+    max-height: 100vh;
 }
+
 .main-slide .slider {
-    width: calc(100%*6);
+    width: 100%;
     height: 100%;
     position: relative;
     display: flex;
 }
-.main-slide .slider input {
-    display:none;
-}
-.main-slide .slider .image-box {
-    width:90%;
-    height: 100%;
-    transition: 0.3s ease;
-    margin: 0;
 
+.main-slide .slider .image-box {
+    width:100%;
+    height: 100%;
+    /* transition: 0.3s ease; */
+    margin: 0;
+    position: absolute;
+}
+.main-slide .slider .image-box:not(:first-child) {
+    left:100%;
+}
+.main-slide .slider .image-box.active {
+    transform: translateX(-100%);
 }
 .main-slide .image-box .title {
     position: absolute;
@@ -50,17 +60,18 @@
     width: 100%;
     word-break: keep-all;
     font-size: 2.2rem;
-    margin:2% 1%;
+    margin:8% 5%;
     line-height: 50px;
     z-index: 99;
 }
 .main-slide .slider .image-box img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: fill;
     animation: slide 30s infinite;
+    
 }
-@keyframes slide {
+/* @keyframes slide {
     0% {
         transform: translateX(0%);
     }20% {
@@ -78,7 +89,7 @@
     100% {
         transform: translateX(-500%);
     }
-}
+} */
 
 
 
@@ -95,33 +106,42 @@
         "mobile-side-box"
         "mobile-footer";
         width: 100%;
-        height: 150vh;
+        height: 100vh;
         display: block;
     }
     .mobile .mobile-slide {
         grid-area: main-slide;
         width: 100%;
-        height: 50%;
+        height: 44%;
         position: relative;
         overflow: hidden;
-    
+     
     }
     .mobile .mobile-slide .slider {
-        width: 600%;
+        width: 100%;
         height: 100%;
+        position: absolute;
         display: flex;
     }
     .mobile .mobile-slide .slider .image-box {
         width: 100%;
         height: 100%;
+        position: absolute;
+        
     }
+    .mobile .mobile-slide .slider .image-box:not(:first-child) {
+        left: 100%;
+    }
+    .mobile .mobile-slide .slider .image-box.active {
+       left:0%;
+    }
+
     .mobile .mobile-slide .slider .image-box h2 {
         font-size: 1.5rem;
         line-height: 30px;
         width: 100%;
         position: absolute;
         color: #fff;
-        font-size: 120%;
         text-align: center;
         top:20px;
         z-index: 99;
@@ -131,8 +151,9 @@
         height: 100%;
         animation: slide 30s infinite;
         display: block;
+        position: absolute;
     }
-    @keyframes slide {
+    /* @keyframes slide {
         0% {
             transform: translateX(0%);
         }20% {
@@ -150,13 +171,32 @@
         100% {
             transform: translateX(-500%);
         }
-    }
+    } */
 
 }
  
-@media screen and (max-width:420px) {
+@media screen and (max-width:540px) {
     .mobile .mobile-slide .slider .image-box h2 {
         font-size: 1rem;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .mobile .mobile-slide {
+        grid-area: main-slide;
+        width: 100%;
+        height: 32%;
+        position: relative;
+        overflow: hidden;
+    
     }
 
 }

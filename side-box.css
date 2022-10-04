@@ -137,13 +137,13 @@
       "mobile-side-box"
       "mobile-footer";
       width: 100%;
-      height: 150vh;
+      height: 120vh;
       display: block;
    }
    .mobile .mobile-side-box {
       grid-area: mobile-side-box;
       width: 100%;
-      height: 50%;
+      height: 42%;
     
    }
    .mobile .mobile-side-box .mobile-side-container {
@@ -204,6 +204,7 @@
    .mobile .mobile-side-box .mobile-side-container .box4 .title{
       color: red;
       font-size: 140%;
+      
    }
    .mobile .mobile-side-box .mobile-side-container .box1 .eng,
    .mobile .mobile-side-box .mobile-side-container .box2 .eng,
@@ -240,26 +241,34 @@
    }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:540px) {
+   .mobile .mobile-side-box .mobile-side-container .box1,
+   .mobile .mobile-side-box .mobile-side-container .box2,
+   .mobile .mobile-side-box .mobile-side-container .box3,
+   .mobile .mobile-side-box .mobile-side-container .box4 {
+      padding:1em;
+   }
+
+
    .mobile .mobile-side-box .mobile-side-container .box1 .title,
    .mobile .mobile-side-box .mobile-side-container .box2 .title,
    .mobile .mobile-side-box .mobile-side-container .box3 .title,
    .mobile .mobile-side-box .mobile-side-container .box4 .title{
-      font-size: 100%;
+      font-size: 80%;
    }
    .mobile .mobile-side-box .mobile-side-container .box1 .eng,
    .mobile .mobile-side-box .mobile-side-container .box2 .eng,
    .mobile .mobile-side-box .mobile-side-container .box3 .eng,
    .mobile .mobile-side-box .mobile-side-container .box4 .eng{
-      font-size: 80%;
+      font-size: 50%;
    }
    .mobile .mobile-side-box .mobile-side-container .box1 img,
    .mobile .mobile-side-box .mobile-side-container .box2 img,
    .mobile .mobile-side-box .mobile-side-container .box3 img,
    .mobile .mobile-side-box .mobile-side-container .box4 img{  
       position: absolute;
-      width: 100%;
-      height: 80%; 
+      width: 80%;
+      height: 75%; 
    }
    .mobile .mobile-side-box .mobile-side-container .box2 img {
       height: 100%;
@@ -268,13 +277,31 @@
    }
    .mobile .mobile-side-box .mobile-side-container .box3 img {
       width: 50%;
-      height: 60%;
+      height: 65%;
       right: 10%;
       bottom: 0%;
    }
    .mobile .mobile-side-box .mobile-side-container .box4 img {
-      height: 80%;
+      width: 100%;
+      height: 95%;
       right: -15%;
      bottom: 0%;
+   }
+   .mobile{
+      grid-template-rows: 10% 40% 40% 10%;
+      grid-template-areas: 
+      "mobile-nav"
+      "mobile-slide"
+      "mobile-side-box"
+      "mobile-footer";
+      width: 100%;
+      height: 100vh;
+      display: block;
+   }
+   .mobile .mobile-side-box {
+      grid-area: mobile-side-box;
+      width: 100%;
+      height: 52%;
+    
    }
 }
