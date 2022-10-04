@@ -240,38 +240,34 @@
     }
     .mobile .mobile-nav .title .logoes span{
         display: block;
-        width: 100%;
-        height: 100%;
     }
     .mobile .mobile-nav .title a{
         text-decoration: none;
+        height: 100%;
         display: flex;
         align-items: center;
-        width: 100%;
-        height: 100%;
-      
     }
     .mobile .mobile-nav .title .logo {
-        font-size: 2.5rem;
+        font-size: 24px;
         font-weight: 600;
         color: #fff;
         transform: translateX(-50%);
         letter-spacing: 2px;
-        display: flex;
-        align-items: center;
         line-height: 20px;
+    
     }
     .mobile .mobile-nav .title .logo-small {
-        transform: translateX(-50%);
-        font-size: 1.2rem;
-        letter-spacing: 10px;
+        transform: translateX(-45%);
+        font-size:3px;
+        letter-spacing: 7px;
         color: #fff;
-        padding:0 10%;
+        padding:0 0%;
         line-height: 10px;
         display: flex;
         align-items: center;
        
     }
+    
     .mobile .mobile-nav .title .material-symbols-outlined {
         color: #fff;
          font-size: 2.5rem;
