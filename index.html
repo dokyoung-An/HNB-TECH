@@ -247,46 +247,65 @@
     </div>
 <script>
  let counter = 1;
- let counter11 = 0;
+
+ const first0 = document.querySelector(' first0')
+const first1 = document.querySelector('.first1')
+const first2 = document.querySelector('.first2')
+const first3 = document.querySelector('.first3')
+const first4 = document.querySelector('.first4')
+const first5 = document.querySelector('.first5')
+ 
  
 function moving() {
     const first = document.querySelector('.first'+ counter)
-    const first11 = document.querySelector('.first'+ counter11)
+    
      
     if (counter< 6) {
       first.classList.toggle('active')
-      first11.classList.toggle('active')
+     
       counter++
-      counter11++
+     
     }else {
         counter=1;
-        counter11=0;
+        first1.classList.toggle('active')
+        first2.classList.toggle('active')
+        first3.classList.toggle('active')
+        first4.classList.toggle('active')
+        first5.classList.toggle('active')  
     }
 }
 
-setInterval(moving,2000);
+setInterval(moving,3000);
 
 let counter1 = 1;
-let counter0 = 0
+
+const img0 = document.querySelector('.img0')
+const img1 = document.querySelector('.img1')
+const img2 = document.querySelector('.img2')
+const img3 = document.querySelector('.img3')
+const img4 = document.querySelector('.img4')
+const img5 = document.querySelector('.img5')
+
 
 function moving2  () {
-    const first1 = document.querySelector('.img' + counter1)
-    const first0 = document.querySelector('.img' + counter0)
+    const img = document.querySelector('.img' + counter1)
+
 
     if (counter1 <6) {
-        first1.classList.toggle('active')
-        first0.classList.toggle('active')
-
+        img.classList.toggle('active')
         counter1 ++;
-        counter0 ++;
-        console.log(first1)
-        console.log(first0)
+        
     } else {
-      counter1 = 1
-      counter0 = 0
-    }
+        counter1 = 1;
+       img1.classList.toggle('active')
+       img2.classList.toggle('active')
+       img3.classList.toggle('active')
+       img4.classList.toggle('active')
+       img5.classList.toggle('active')
+       
+    } 
 }
-setInterval(moving2,1000);
+setInterval(moving2,3000);
 
 
 </script>

@@ -290,7 +290,9 @@
     }
     .mobile .side-menu.active {
         transform: translateX(0%);
+       
     }
+
 
     .mobile .side-menu .language {
         width: 100%;
