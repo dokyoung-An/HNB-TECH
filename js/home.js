@@ -25,7 +25,7 @@ opt3.addEventListener('click',()=>{
     air.classList.remove('active')
     water.classList.remove('active')
     vr.classList.add('active')
-    home.classList.remove('active')
+    home.classList.add('active')
 })
 opt4.addEventListener('click',()=>{
     air.classList.remove('active')
@@ -57,7 +57,7 @@ water3.addEventListener('click',()=>{
     air.classList.remove('active')
     water.classList.remove('active')
     vr.classList.add('active')
-    home.classList.remove('active')
+    home.classList.add('active')
 })
 water4.addEventListener('click',()=>{
     air.classList.remove('active')
@@ -88,7 +88,7 @@ vr3.addEventListener('click',()=>{
     air.classList.remove('active')
     water.classList.remove('active')
     vr.classList.add('active')
-    home.classList.remove('active')
+    home.classList.add('active')
 })
 vr4.addEventListener('click',()=>{
     air.classList.remove('active')
@@ -119,7 +119,7 @@ home3.addEventListener('click',()=>{
     air.classList.remove('active')
     water.classList.remove('active')
     vr.classList.add('active')
-    home.classList.remove('active')
+    home.classList.add('active')
 })
 home4.addEventListener('click',()=>{
     air.classList.remove('active')
@@ -156,7 +156,7 @@ air3.addEventListener('click',()=>{
     mAir.classList.remove('active')
     mWater.classList.remove('active')
     mVr.classList.add('active')
-    mHome.classList.remove('active')
+    mHome.classList.add('active')
 })
 air4.addEventListener('click',()=>{
     mAir.classList.remove('active')
@@ -188,7 +188,7 @@ mWater3.addEventListener('click',()=>{
     mAir.classList.remove('active')
     mWater.classList.remove('active')
     mVr.classList.add('active')
-    mHome.classList.remove('active')
+    mHome.classList.add('active')
 })
 mWater4.addEventListener('click',()=>{
     mAir.classList.remove('active')
@@ -219,7 +219,7 @@ mVr3.addEventListener('click',()=>{
     mAir.classList.remove('active')
     mWater.classList.remove('active')
     mVr.classList.add('active')
-    mHome.classList.remove('active')
+    mHome.classList.add('active')
 })
 mVr4.addEventListener('click',()=>{
     mAir.classList.remove('active')
@@ -251,7 +251,7 @@ mHome3.addEventListener('click',()=>{
     mAir.classList.remove('active')
     mWater.classList.remove('active')
     mVr.classList.add('active')
-    mHome.classList.remove('active')
+    mHome.classList.add('active')
 })
 mHome4.addEventListener('click',()=>{
     mAir.classList.remove('active')
