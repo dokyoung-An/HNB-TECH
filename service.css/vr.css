@@ -7,17 +7,16 @@
     grid-template-areas: 
     "nav main-slide side-box";
     width: 100%;
-    height: 160vh;
+    height: auto;
     min-width: 500px;
-    min-height: 800px;
-    max-height: 800px;
+    max-height: 900px;
+ 
 }
 
 .pc .main-slide {
     grid-area: main-slide;
     width: 100%;
     height: 100%;
-    min-height: 1900px;
     max-height: 2200px;
 }
 .pc .main-slide .about-container {
@@ -26,6 +25,7 @@
     height: 100%;
    overflow: hidden;
    position: relative;
+   box-sizing: border-box;
 }
 /* 옵션 보이기  */
 .pc .main-slide .about-container .air {
@@ -610,11 +610,10 @@
 .pc .main-slide .about-container .home .explain {
     width: 100%;
     height: auto;
+    box-sizing: border-box;
+
 }
-.pc .main-slide .about-container .home .explain {
-    width: 100%;
-    height: auto;
-}
+
 .pc .main-slide .about-container .home .explain .title {
     font-weight: 700;
     margin-bottom: 50px;
@@ -650,33 +649,36 @@
 .pc .main-slide .about-container .home .explain .detail .brand {
     width: 100%;
     height: auto;
-    display: flex;
+    position: relative;
 }
 .pc .main-slide .about-container .home .explain .detail .brand img {
-    width: 40%;
-    height: 80%;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    transform: translateY(20px);
+    padding: 0;
 }
 .pc .main-slide .about-container .home .explain .detail .brand a {
     text-decoration: none;
     color: black;
-    position: relative;
-    transform: translateY(70%);
     font-size: 1.5rem;
+    display: inline;
 }
-.pc .main-slide .about-container .home .explain .detail .brand a:before {
+.pc .main-slide .about-container .home .explain .detail .brand:before  {
     content:'';
-    width: 100%;
+    width: 50%;
     position: absolute;
     height: 1px;
     background-color: red;
-    bottom: 130px;
+    bottom: -20px;
     animation: slide 3s infinite;
+    left: 20px;
 }
 @keyframes slide {
     from {
         width: 0;
     }to {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -709,8 +711,9 @@
     .mobile .mobile-slide .about-container {
         padding:5% 3% 5% 3%;
         width: 100%;
-        height: 140%;
+        height: auto;
         overflow: hidden; 
+        max-height: 1850px;
     }
 
     /* 옵션 보이기  */
@@ -1298,11 +1301,9 @@
 .mobile .mobile-slide .about-container .home .explain {
     width: 100%;
     height: auto;
+    min-height: 890px;
 }
-.mobile .mobile-slide .about-container .home .explain {
-    width: 100%;
-    height: auto;
-}
+
 .mobile .mobile-slide .about-container .home .explain .title {
     font-weight: 700;
     margin-bottom: 50px;
@@ -1310,7 +1311,7 @@
 }
 .mobile .mobile-slide .about-container .home .explain .detail {
     width: 100%;
-    height: auto;
+    height: 890px;
 }
 .mobile .mobile-slide .about-container .home .explain .detail h5 {
     font-weight: 500;
@@ -1337,33 +1338,36 @@
 .mobile .mobile-slide .about-container .home .explain .detail .brand {
     width: 100%;
     height: auto;
-    display: flex;
+    position: relative;
+   padding: 0;
 }
 .mobile .mobile-slide .about-container .home .explain .detail .brand img {
-    width: 40%;
-    height: 80%;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    transform: translateY(20px);
+    padding: 0;
 }
 .mobile .mobile-slide .about-container .home .explain .detail .brand a {
     text-decoration: none;
     color: black;
-    position: relative;
-    transform: translateY(70%);
     font-size: 1.5rem;
+    display: inline;
 }
-.mobile .mobile-slide .about-container .home .explain .detail .brand a:before {
+.mobile .mobile-slide .about-container .home .explain .detail .brand:before  {
     content:'';
-    width: 100%;
+    width: 50%;
     position: absolute;
     height: 1px;
     background-color: red;
-    bottom: 130px;
+    bottom: -20px;
     animation: slide 3s infinite;
 }
 @keyframes slide {
     from {
         width: 0;
     }to {
-        width: 100%;
+        width: 50%;
     }
 }
 }

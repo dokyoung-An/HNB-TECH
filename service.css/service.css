@@ -16,8 +16,7 @@
 .pc .main-slide {
     grid-area: main-slide;
     width: 100%;
-    height: 100%;
-    min-height: 1900px;
+    height: auto;
     max-height: 2200px;
 }
 .pc .main-slide .about-container {
@@ -650,33 +649,36 @@
 .pc .main-slide .about-container .home .explain .detail .brand {
     width: 100%;
     height: auto;
-    display: flex;
+    position: relative;
 }
 .pc .main-slide .about-container .home .explain .detail .brand img {
-    width: 40%;
-    height: 80%;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    transform: translateY(20px);
+    padding: 0;
 }
 .pc .main-slide .about-container .home .explain .detail .brand a {
     text-decoration: none;
     color: black;
-    position: relative;
-    transform: translateY(70%);
     font-size: 1.5rem;
+    display: inline;
 }
-.pc .main-slide .about-container .home .explain .detail .brand a:before {
+.pc .main-slide .about-container .home .explain .detail .brand:before  {
     content:'';
-    width: 100%;
+    width: 50%;
     position: absolute;
     height: 1px;
     background-color: red;
-    bottom: 130px;
+    bottom: -20px;
     animation: slide 3s infinite;
+    left: 20px;
 }
 @keyframes slide {
     from {
         width: 0;
     }to {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -699,6 +701,8 @@
         width: 100%;
         height: 150vh;
         display: block;
+        min-height: 1450px;
+        max-height: 1450px;
     }
     .mobile .mobile-slide {
         grid-area: mobile-slide;
@@ -709,7 +713,7 @@
     .mobile .mobile-slide .about-container {
         padding:5% 3% 5% 3%;
         width: 100%;
-        height: 140%;
+        height: auto;
         overflow: hidden; 
     }
 
@@ -1338,33 +1342,36 @@
 .mobile .mobile-slide .about-container .home .explain .detail .brand {
     width: 100%;
     height: auto;
-    display: flex;
+    position: relative;
+   padding: 0;
 }
 .mobile .mobile-slide .about-container .home .explain .detail .brand img {
-    width: 40%;
-    height: 80%;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    transform: translateY(20px);
+    padding: 0;
 }
 .mobile .mobile-slide .about-container .home .explain .detail .brand a {
     text-decoration: none;
     color: black;
-    position: relative;
-    transform: translateY(70%);
     font-size: 1.5rem;
+    display: inline;
 }
-.mobile .mobile-slide .about-container .home .explain .detail .brand a:before {
+.mobile .mobile-slide .about-container .home .explain .detail .brand:before  {
     content:'';
-    width: 100%;
+    width: 50%;
     position: absolute;
     height: 1px;
     background-color: red;
-    bottom: 130px;
+    bottom: -20px;
     animation: slide 3s infinite;
 }
 @keyframes slide {
     from {
         width: 0;
     }to {
-        width: 100%;
+        width: 50%;
     }
 }
 }
