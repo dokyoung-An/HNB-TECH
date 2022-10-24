@@ -1,0 +1,504 @@
+.mobile {
+    display: none;
+}
+.pc {
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: 
+    "nav main-slide side-box";
+    width: 100%;
+    height: 160vh;
+    min-width: 500px;
+    min-height: 800px;
+    max-height: 800px;
+}
+.pc .main-slide {
+    grid-area: main-slide;
+    width: 100%;
+    height: auto;
+   padding-bottom: 100px;
+}
+.pc .main-slide .about-container {
+    padding:5% 15% 5% 5%;
+    width: 100%;
+    height: auto;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+/* 선택부분 */
+#air {
+    display: none;
+}
+#air.active {
+    display: block;
+}
+#water {
+    display: none;
+}
+#water.active {
+    display: block;
+}
+#vr {
+    display: block;
+}
+#vr.active {
+    display: none;
+}
+#home {
+    display: none;
+}
+#home.active {
+    display: block;
+}
+
+/* 카테고리 부분 */
+.pc .main-slide .about-container .portfolio .ss-title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .portfolio .ss-title span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.pc .main-slide .about-container .portfolio .ss-title span:last-child {
+    color: red;
+}
+/* 타이틀 */
+.pc .main-slide .about-container .portfolio .main-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.pc .main-slide .about-container .portfolio .main-title h2 {
+    font-size: 2rem;
+}
+/* 옵션부분 */
+.pc .main-slide .about-container .portfolio .option {
+    width: 100%;
+ }
+ .pc .main-slide .about-container .portfolio .option ul{
+     width: 40%;
+     height: auto;
+     display: flex;
+     justify-items: center;
+     transform: translateX(150%);
+     margin-bottom: 20px;
+ }
+ .pc .main-slide .about-container .portfolio .option ul li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    font-size: 0.8rem;
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+ }
+ .pc .main-slide .about-container .portfolio .option ul li:hover:before {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: red;
+     position: absolute;
+     bottom: -5px;
+     left: 0%;
+     transition: 0.3s ease;
+ }
+ .pc .main-slide .about-container .portfolio .option ul li span {
+     position: absolute;
+     top:-20px;
+     left:50%;
+     transform: translateX(-50%);
+     color: red;
+     display: none;
+ }
+ /* 옵션 선택 고정 부분 */
+ .pc .main-slide .about-container .portfolio .option ul .opt3 span {
+     display: block;
+ }
+ .pc .main-slide .about-container .portfolio .option ul .opt3:before {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: red;
+     position: absolute;
+     bottom: -5px;
+     left: 0%;
+     transition: 0.3s ease;
+ } 
+ 
+ .pc .main-slide .about-container .portfolio .option ul li:hover span {
+     display: block;
+ }
+.pc .main-slide .about-container .portfolio .option ul .opt3.active span {
+    display: none;
+ }
+.pc .main-slide .about-container .portfolio .option ul .opt3.active:before {
+    display: none;
+ }
+
+.pc .main-slide .about-container .portfolio .option ul .opt2.active span,
+.pc .main-slide .about-container .portfolio .option ul .opt1.active span,
+.pc .main-slide .about-container .portfolio .option ul .opt4.active span{
+    display: block;
+ }
+.pc .main-slide .about-container .portfolio .option ul .opt1.active:before,
+.pc .main-slide .about-container .portfolio .option ul .opt2.active:before,
+.pc .main-slide .about-container .portfolio .option ul .opt3.active:before,
+.pc .main-slide .about-container .portfolio .option ul .opt4.active:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+/* 선 */
+.pc .main-slide .about-container .portfolio .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+/* 아래 타이틀 */
+.pc .main-slide .about-container .portfolio .port-box .s-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 갤러리 */
+.pc .main-slide .about-container .portfolio .port-box {
+    width: 100%;
+    height: 100%;
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "port1 port2"
+    "port3 port4"
+    "port5 port6"
+    "port7 port8" ;
+    gap:30px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container a {
+    width: 100%;
+    height: auto;
+}
+.pc .main-slide .about-container .portfolio .port-box .port-container a img {
+    width: 100%;
+    height: 100%;
+}
+.pc .main-slide .about-container .portfolio .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.pc .main-slide .about-container .portfolio .button .btn {
+    margin-right: 5px;
+    margin-top: 80px;
+    border: 1px solid #000;
+    padding:5px 7px;
+}
+
+
+
+@media screen and (max-width:1280px) {
+    .pc {
+        display: none;
+    }
+    .mobile{
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "mobile-nav"
+        "mobile-slide"
+        "mobile-side-box"
+        "mobile-footer";
+        width: 100%;
+        height: auto;
+        display: block;
+        
+    }
+/* 선택부분 */
+#air-m {
+    display: none;
+}
+#air-m.active {
+    display: block;
+}
+#water-m {
+    display: none;
+}
+#water-m.active {
+    display: block;
+}
+#vr-m {
+    display: block;
+}
+#vr-m.active {
+    display: none;
+}
+#home-m {
+    display: none;
+}
+#home-m.active {
+    display: block;
+}
+/* 모바일 시작 */
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+       
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 10% 3%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+      
+    }
+    .mobile .mobile-slide .about-container .portfolio{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+     /* 카테고리 부분 */
+     .mobile .mobile-slide .about-container .portfolio .ss-title{
+        width: 100%;
+        height: 20px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .ss-title span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .mobile .mobile-slide .about-container .portfolio .ss-title span:last-child {
+        color: red;
+    }
+    /* 타이틀 */
+    .mobile .mobile-slide .about-container .portfolio .main-title {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .main-title h2 {
+        font-size: 2rem;
+    }
+    /* 옵션부분 */
+.mobile .mobile-slide .about-container .portfolio .option {
+    width: 100%;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul{
+     width: 40%;
+     height: auto;
+     display: flex;
+     justify-items: center;
+     transform: translateX(150%);
+     margin-bottom: 20px;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    font-size: 0.8rem;
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul li:hover:before {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: red;
+     position: absolute;
+     bottom: -5px;
+     left: 0%;
+     transition: 0.3s ease;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul li span {
+     position: absolute;
+     top:-20px;
+     left:50%;
+     transform: translateX(-50%);
+     color: red;
+     display: none;
+ }
+ /* 옵션 선택 고정 부분 */
+ .mobile .mobile-slide .about-container .portfolio .option ul li span {
+     display: none;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul li span:hover {
+    display: block;
+}
+ .mobile .mobile-slide .about-container .portfolio .option ul li:hover:before {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: red;
+     position: absolute;
+     bottom: -5px;
+     left: 0%;
+     transition: 0.3s ease;
+ } 
+ 
+ .mobile .mobile-slide .about-container .portfolio .option ul li:hover span {
+     display: block;
+ }
+
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM3 span {
+    display: block;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM3:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM3.active span {
+    display: none;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM3.active:before {
+    display: none;
+ }
+
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM2.active span,
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM1.active span,
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM4.active span{
+    display: block;
+ }
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM1.active:before,
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM2.active:before,
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM3.active:before,
+ .mobile .mobile-slide .about-container .portfolio .option ul .optM4.active:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: 0.3s ease;
+} 
+
+    /* 선 */
+    .mobile .mobile-slide .about-container .portfolio .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+    }
+    /* 아래 타이틀 */
+    .mobile .mobile-slide .about-container .portfolio .s-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    /* 갤러리 부분 */
+ .mobile .mobile-slide .about-container .portfolio .port-box {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "port1 port2"
+        "port3 port4"
+        "port5 port6"
+        "port7 port8";
+        height: auto;
+        gap:20px;
+        box-sizing: border-box;
+        overflow: hidden;
+       
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container a {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        object-fit: cover;
+    }
+ .mobile .mobile-slide .about-container .portfolio .port-box .port-container a img {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+ .mobile .mobile-slide .about-container .portfolio .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+ .mobile .mobile-slide .about-container .portfolio .button .btn {
+        margin-right: 5px;
+        margin-top: 80px;
+        border: 1px solid #000;
+        padding:5px 7px;
+    }   
+}
+
+@media  screen and (max-width:540px) {
+    .mobile .mobile-slide {
+        grid-area: mobile-slide;
+        width: 100%;
+        height: 120%;
+        min-height: 1200px;
+        max-height:1200px ;
+    }
+    .mobile .mobile-slide .about-container {
+        padding:5% 3% 5% 3%;
+        width: 100%;
+        height: 100%;
+       overflow: hidden;
+       max-height: 1200px;
+       min-height: 1200px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .port-box .port-container {
+        display: grid;
+        grid-template-areas: 
+        "port1 port2"
+        "port3 port4";
+        width: 100%;
+        height: 50%;
+        gap:5px;
+        min-height: 800px;
+    }
+    
+    /* 맨 위 개요 부분 */
+    .mobile .mobile-slide .about-container .portfolio .ss-title span {
+        font-size: 0.5rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .main-title h2 {
+        font-size: 1.7rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .s-title {
+        font-size: 1.3rem;
+    }
+    .mobile .mobile-slide .about-container .portfolio .catagory ul li {
+        padding: 5px;
+    }
+    .mobile .mobile-slide .about-container .portfolio .catagory ul li a{
+        font-size: 0.5rem;
+        min-width: 50px;
+    }
+}
